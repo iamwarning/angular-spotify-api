@@ -1,0 +1,5 @@
+<input type="text" (keyup)="searchArtist($event)">
+
+<app-loading *ngIf="loader"></app-loading>
+<app-cards *ngIf="!loader" [items]="arrArtist"></app-cards>
+
